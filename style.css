@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 1;
+    text-transform: capitalize;
+    text-align: center;
+    color: #f5f0ed;
+    font-family: "OpenSansExtrabold";
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "OpenSansExtrabold";
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: "OpenSansExtrabold";
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "OpenSansRegular";
+}
+
+a {
+    font-family: "OpenSansExtrabold";
+    text-decoration: none;
+}
+
+button {
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+    background-color: transparent;
+    border: 2px solid #ded6c0;
+    color:  #ded6c0;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.box {
+    padding: 35px 10px;
+}
+
+.box-red {
+    background-color: #d03b40;
+    color: #ded6c0;
+    text-align: center;
+}
+
+.box-brown {
+    background-color: #ded6c0;
+    color: #d03b40;
+    text-align: center;
+}
+
+.box-white {
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+    text-align: left;
+}
+
+.box-black {
+    background-color: #241d1b;
+    color: #f5f0ed;
+    text-align: left;
+}
+
+.box-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #f5f0ed;
+}
+
+.img-header {
+    background-image: url(./assets/images/Fondo1.jpg);
+}
+
+.img-breakfast {
+    background-image: url(./assets/images/Fondo2.jpg);
+}
+
+.text-white {
+    color: #ded6c0;
+}
+
+.text-red {
+    color: #d03b40;
+}
+
+.logo-section {
+    display: block;
+    margin: auto;
+    height: 65px;
+    margin-bottom: 10px;
+}
+
+.separator {
+    height: 2px;
+    background-color: #ded6c0;
+    width: 75px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header, .logo-cafesolo {
+    height: 25px;
+}
+
+.logo-cafesolo {
+    display: inline-block;
+    float: left;
+}
+
+.menu {
+    float: right;
+    font-size: 16px;
+    font-family: "OpenSansExtrabold";
+    color: #ded6c0
+}
+
+@media screen and (min-width: 1000px) {
+    .box-red, .box-brown, .box-white {
+        display: inline-block;
+        width: 50%;
+        height: 250px;
+        float: left;
+    }
+
+    .box-red, .box-brown, .box-img {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .box-black, .box-img {
+        overflow: hidden;
+    }
+
+    .box-white .logo-section {
+        display: inline-block;
+        float: left;
+        height: auto;
+        width: 25%;
+        max-width: 100px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
