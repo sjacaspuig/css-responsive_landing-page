@@ -5,6 +5,7 @@
         <title>Café Oslo - Website</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="hamburgers.css">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -12,7 +13,27 @@
         <div class="box img-header">
             <div class="header">
                 <img class="logo-cafesolo" src="assets/images/Logo.png" alt="">
-                <div class="menu">Menú</div>
+                <a id="enlace-menu" href="#menu" class="menu lanzador-menu hamburger">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner "></span>
+                    </span>
+                </a>
+                <div id="menu" class="navegacion">
+                    <ul>
+                        <li>
+                            <a href="#brunch">ACTIVIDADES</a>
+                        </li>
+                        <li>
+                            <a href="#primerProducto">PRODUCTOS</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">CONTACTO</a>
+                        </li>                        
+                        <li>
+                            <a href="#ubicacion">DÓNDE ESTAMOS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="box-img">
                 <h1>RECIÉN HECHO, TODOS LOS DÍAS</h1>
@@ -22,24 +43,24 @@
                     ice cream ice cream. Bonbon sweet bonbon jelly beans jelly-o I love lollipop</p>
             </div>
         </div>
-        <div class="box box-red">
+        <div id="brunch" class="box box-red">
             <h2>VEN AL BRUNCH DE LOS DOMINGOS</h2>
             <P>Sesame snaps icing chocolate bar. I love donut powder sesame snaps. Jelly-o topping 
                 caramels. Sugar plum i love gummi bears</P>
         </div>
-        <div class="box box-brown">
+        <div id="celebraciones" class="box box-brown">
             <h2>CELEBRA TUS FIESTAS CON NOSOTROS</h2>
             <P>Bonbon sweet bonbon jelly beans jelly-o I love lollipop. Cookie sesame snaps bear 
                 claw. Cake dragée danish. Powder I love liquorice macaroon.</P>
         </div>
-        <div class="box box-img img-breakfast">
+        <div id="desayuno" class="box box-img img-breakfast">
             <h2>VEN A DESAYUNAR</h2>
             <div class="separator"></div>
             <P>Bonbon topping I love sweet toll I love candy icing chocolate jelly. Pie soufflé 
                 sweet. Apple piebonbon caramels powder.</P>
             <button>DESCUBRE NUESTROS PRODUCTOS</button>
         </div>
-        <div class="box box-white">
+        <div id="primerProducto" class="box box-white">
             <img class="logo-section" src="assets/images/Icono1.png" alt="bread">
             <div>
                 <h3>PAN RECIÉN HECHO</h3>
@@ -48,7 +69,7 @@
                     muffin wafer sweet roll I love chupa chups. Apple pie jujubes ice cream sugar plum topping.</P>
             </div>
         </div>
-        <div class="box box-white">
+        <div id="segundoProducto" class="box box-white">
             <img class="logo-section" src="assets/images/Icono2.png" alt="cake">
             <div>                
                 <h3>TARTAS PARA CADA DÍA</h3>
@@ -56,7 +77,7 @@
                     sesame snaps sugar plum I love bonbon. I love I love halvah.</P>
             </div>
         </div>
-        <div class="box box-white">
+        <div id="terceroProducto" class="box box-white">
             <img class="logo-section" src="assets/images/Icono3.png" alt="muffins">
             <div>                
                 <h3>PRUEBA NUESTROS DULCES</h3>
@@ -65,7 +86,7 @@
                     brownie gummi bears dragée jelly-o.</P>
             </div>
         </div>
-        <div class="box box-white">
+        <div id="cuartoProducto" class="box box-white">
             <img class="logo-section" src="assets/images/Icono4.png" alt="cereals">
             <div>
                 <h3>INGREDIENTES ECOLÓGICOS</h3>
@@ -75,16 +96,17 @@
                     jelly-o liquorice tart.</P>
             </div>
         </div>
-        <div class="box box-brown">
+        <div id="contacto" class="box box-brown">
             <h2>CONTACTA CON NOSOTROS</h2>
             <P>Si quieres hacer una reserva, tienes alguna sugerencia o simplemente quieres saludar, escríbenos a: <a class="text-red" href="mailto:cafeoslo@cafeoslo.es">cafeoslo@cafeoslo.es</a></P>
         </div>
-        <div class="box box-red">
+        <div id="ubicacion" class="box box-red">
             <h2>¿SABES DÓNDE ESTAMOS?</h2>
             <P>C/ Mayor, 15<br>00000 Barcelona<br><a class="text-white" href="https://www.google.es/maps/" target="_blank">(Google Maps)</a></P>
         </div>
         <div class="box box-black">
             <p class="text-white">Septiembre 2005<br>Todo los derechos reservados</p>
         </div>
+        <script src="functions.js"></script>
     </body>
 </html>

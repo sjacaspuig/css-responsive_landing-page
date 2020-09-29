@@ -136,10 +136,33 @@ button {
     float: right;
     font-size: 16px;
     font-family: "OpenSansExtrabold";
-    color: #ded6c0
+    color: #ded6c0;
+    margin-top: 5px;
 }
 
-@media screen and (min-width: 1000px) {
+.js .navegacion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #241d1b;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #f5f0ed;
+}
+
+.js .navegacion a {
+    padding: 5px 10px;
+    color: #f5f0ed;
+    display: block;
+}
+
+.js .navegacion.menu-desplegado {
+    max-height: 200px;
+}
+
+@media screen and (min-width: 1024px) {
     .box-red, .box-brown, .box-white {
         display: inline-block;
         width: 50%;
@@ -164,5 +187,27 @@ button {
         max-width: 100px;
         margin-right: 10px;
         margin-bottom: 0;
+    }
+
+    .lanzador-menu {
+        display: none;
+    }
+
+    .js .navegacion {
+        position: relative;
+        overflow: unset;
+        float: right;
+        top: 0;
+
+    }
+
+    .js .navegacion li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .js .navegacion a {
+        padding: 0;
+        line-height: 37px;
     }
 }
